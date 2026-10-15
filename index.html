@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakir Ahamad | Futuristic Web Developer & AI Interface Engineer</title>
+  <meta name="description" content="Official portfolio of Sakir Ahamad — Web Developer, AI Interface Architect, and Creative Technologist crafting next-generation digital experiences.">
+  <meta name="keywords" content="Sakir Ahamad, Web Developer, AI Portfolio, Frontend Engineer, Full Stack Developer, Futuristic Web Design, JavaScript, React, Next.js">
+  <meta name="author" content="Sakir Ahamad">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Sakir Ahamad | Futuristic Web Developer">
+  <meta property="og:description" content="Engineering hyper-scalable, immersive web platforms at the nexus of modern web architecture and intelligent systems.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Orbitron:wght@400;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body class="cyber-theme">
+
+  <!-- Custom Sci-Fi Cursor -->
+  <div class="custom-cursor-dot" id="cursorDot"></div>
+  <div class="custom-cursor-ring" id="cursorRing"></div>
+
+  <!-- Interactive Background Canvas -->
+  <canvas id="neuralCanvas"></canvas>
+
+  <!-- Matrix Digital Rain Canvas (Hidden until triggered) -->
+  <canvas id="matrixCanvas"></canvas>
+
+  <!-- Ambient Cyber Scanlines & Glow Overlay -->
+  <div class="cyber-scanlines" aria-hidden="true"></div>
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Quick Audio Toggle & HUD Status Bar -->
+  <header class="cyber-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" id="brandLogo" aria-label="Sakir Ahamad Home">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">SA</span>
+        <span class="logo-pulse"></span>
+        <span class="logo-bracket">]</span>
+        <span class="logo-tag">DEV.OS</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="cyber-nav" id="cyberNav">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active" data-nav="hero"><span class="nav-num">01</span><span class="nav-text">CORE</span></a></li>
+          <li><a href="#about" class="nav-link" data-nav="about"><span class="nav-num">02</span><span class="nav-text">DOSSIER</span></a></li>
+          <li><a href="#skills" class="nav-link" data-nav="skills"><span class="nav-num">03</span><span class="nav-text">ARSENAL</span></a></li>
+          <li><a href="#projects" class="nav-link" data-nav="projects"><span class="nav-num">04</span><span class="nav-text">ARCHIVES</span></a></li>
+          <li><a href="#terminal" class="nav-link" data-nav="terminal"><span class="nav-num">05</span><span class="nav-text">TERMINAL</span></a></li>
+          <li><a href="#contact" class="nav-link" data-nav="contact"><span class="nav-num">06</span><span class="nav-text">TRANSMIT</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="nav-actions">
+        <!-- Audio Synth Toggle -->
+        <button class="cyber-audio-btn" id="audioToggle" title="Toggle Sci-Fi Synth SFX" aria-label="Toggle Sound">
+          <div class="sound-bars" id="soundBars">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <span class="audio-label" id="audioLabel">SFX: OFF</span>
+        </button>
+
+        <!-- CTA Protocol Button -->
+        <a href="#contact" class="cyber-btn cyber-btn-sm cyber-btn-glitch" id="initProjectBtn">
+          <span class="btn-cut"></span>
+          <span class="btn-text"><i class="fa-solid fa-satellite-dish"></i> CONNECT</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Experience -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <div class="cyber-badge-wrapper">
+            <div class="cyber-badge">
+              <span class="status-indicator"></span>
+              <span class="badge-text">STATUS: ONLINE // AVAILABLE FOR HIRE</span>
+            </div>
+            <div class="telemetry-badge">
+              <span class="telemetry-icon"><i class="fa-solid fa-microchip"></i></span>
+              <span class="telemetry-val">CORE v4.8</span>
+            </div>
+          </div>
+
+          <h1 class="hero-name">
+            <span class="glitch-text" data-text="SAKIR AHAMAD">SAKIR AHAMAD</span>
+          </h1>
+
+          <div class="hero-title-role">
+            <span class="role-prefix">&gt; SYSTEM_ROLE: </span>
+            <span class="typing-target" id="typingText"></span>
+            <span class="typing-cursor">_</span>
+          </div>
+
+          <p class="hero-description">
+            Architecting next-generation digital realities, hyper-scalable web platforms, and intelligent user interfaces. Merging bleeding-edge web technologies with generative AI engineering to deliver high-impact cybernetic user experiences.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="cyber-btn cyber-btn-primary" id="exploreWorkBtn">
+              <span class="btn-cut"></span>
+              <span class="btn-glow"></span>
+              <span class="btn-text"><i class="fa-solid fa-layer-group"></i> EXPLORE ARCHIVES</span>
+            </a>
+            <a href="#terminal" class="cyber-btn cyber-btn-secondary" id="launchCliBtn">
+              <span class="btn-cut"></span>
+              <span class="btn-text"><i class="fa-solid fa-terminal"></i> RUN TERMINAL</span>
+            </a>
+            <a href="#contact" class="cyber-btn cyber-btn-ghost" id="heroTransmitBtn">
+              <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> TRANSMIT</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics HUD -->
+          <div class="hero-hud-stats">
+            <div class="hud-stat-card">
+              <div class="stat-number" data-target="3">3+</div>
+              <div class="stat-label">YEARS DEV XP</div>
+              <div class="stat-bar"><div class="stat-bar-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="hud-stat-card">
+              <div class="stat-number" data-target="35">35+</div>
+              <div class="stat-label">SYSTEMS BUILT</div>
+              <div class="stat-bar"><div class="stat-bar-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="hud-stat-card">
+              <div class="stat-number" data-target="99">99.9%</div>
+              <div class="stat-label">PERFORMANCE SCORE</div>
+              <div class="stat-bar"><div class="stat-bar-fill" style="width: 99%;"></div></div>
+            </div>
+            <div class="hud-stat-card">
+              <div class="stat-number" data-target="100">100%</div>
+              <div class="stat-label">CLIENT TRUST</div>
+              <div class="stat-bar"><div class="stat-bar-fill" style="width: 100%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Holo-Orb / Card -->
+        <div class="hero-visual">
+          <div class="holo-frame-container" id="holoCard">
+            <!-- Sci-fi Corner Brackets -->
+            <div class="corner-bracket top-left"></div>
+            <div class="corner-bracket top-right"></div>
+            <div class="corner-bracket bottom-left"></div>
+            <div class="corner-bracket bottom-right"></div>
+
+            <!-- Rotating Cybernetic Rings -->
+            <div class="cyber-ring ring-1"></div>
+            <div class="cyber-ring ring-2"></div>
+            <div class="cyber-ring ring-3"></div>
+
+            <!-- Avatar Hologram Image -->
+            <div class="holo-avatar-box">
+              <img src="assets/avatar.jpg" alt="Sakir Ahamad - Futuristic Web Developer" class="holo-img" id="heroAvatar" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80'">
+              <div class="holo-scanline"></div>
+              <div class="holo-tint"></div>
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="floating-tech tech-react" title="React.js Ecosystem">
+              <i class="fa-brands fa-react"></i>
+              <span>React</span>
+            </div>
+            <div class="floating-tech tech-node" title="Node.js Runtime">
+              <i class="fa-brands fa-node-js"></i>
+              <span>Node</span>
+            </div>
+            <div class="floating-tech tech-js" title="Modern JavaScript & TypeScript">
+              <i class="fa-brands fa-js"></i>
+              <span>TS / JS</span>
+            </div>
+            <div class="floating-tech tech-ai" title="AI & Neural Interfaces">
+              <i class="fa-solid fa-brain"></i>
+              <span>AI/LLM</span>
+            </div>
+
+            <!-- Bottom telemetry readout -->
+            <div class="holo-telemetry">
+              <div class="telemetry-row">
+                <span class="tele-label">TARGET:</span>
+                <span class="tele-val">SAKIR_AHAMAD</span>
+              </div>
+              <div class="telemetry-row">
+                <span class="tele-label">SUBSYSTEM:</span>
+                <span class="tele-val text-cyan">WEB_ARCHITECT</span>
+              </div>
+              <div class="telemetry-row">
+                <span class="tele-label">SYS_FREQ:</span>
+                <span class="tele-val text-magenta">2.84 GHz // OPTIMAL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-warp" aria-label="Scroll to Dossier">
+        <span class="warp-text">SCROLL DOWN</span>
+        <div class="warp-arrow">
+          <i class="fa-solid fa-angles-down"></i>
+        </div>
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION (SYSTEM DOSSIER) -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">// 01. SYSTEM_DOSSIER</div>
+          <h2 class="section-title">DECODING THE ARCHITECT</h2>
+          <p class="section-subtitle">Bridging creative aesthetics and computational power to build next-century digital experiences.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Identity Spec Card -->
+          <div class="cyber-card dossier-card" id="dossierCard">
+            <div class="card-header-bar">
+              <div class="card-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-amber"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="card-title-text"><i class="fa-solid fa-id-card-clip"></i> SPEC_SHEET // SAKIR_AHAMAD.json</span>
+              <span class="card-status-badge">ONLINE</span>
+            </div>
+            <div class="dossier-body">
+              <div class="dossier-row">
+                <span class="field-key">"IDENTIFIER"</span>
+                <span class="field-colon">:</span>
+                <span class="field-val string-val">"Sakir Ahamad"</span>
+              </div>
+              <div class="dossier-row">
+                <span class="field-key">"PROFESSION"</span>
+                <span class="field-colon">:</span>
+                <span class="field-val string-val">"Web Developer &amp; AI Interface Engineer"</span>
+              </div>
+              <div class="dossier-row">
+                <span class="field-key">"CORE_STACK"</span>
+                <span class="field-colon">:</span>
+                <span class="field-val array-val">["React", "Next.js", "TypeScript", "Node.js", "AI APIs"]</span>
+              </div>
+              <div class="dossier-row">
+                <span class="field-key">"STATUS"</span>
+                <span class="field-colon">:</span>
+                <span class="field-val status-val">"ACTIVE // READY_FOR_DISPATCH"</span>
+              </div>
+              <div class="dossier-row">
+                <span class="field-key">"BASE_COORDINATES"</span>
+                <span class="field-colon">:</span>
+                <span class="field-val string-val">"Remote // Planet Earth"</span>
+              </div>
+              <div class="dossier-row">
+                <span class="field-key">"SPECIALIZATION"</span>
+                <span class="field-colon">:</span>
+                <span class="field-val string-val">"Immersive High-Speed Frontends &amp; AI Integration"</span>
+              </div>
+              <div class="dossier-row">
+                <span class="field-key">"MISSION_STATEMENT"</span>
+                <span class="field-colon">:</span>
+                <span class="field-val string-val">"Transform complex logic into breathtaking, intuitive cyber systems."</span>
+              </div>
+            </div>
+
+            <!-- Terminal Quote -->
+            <div class="dossier-footer">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="quote-text">
+                "Code is more than syntax; it is the architecture of tomorrow's reality. I build digital tools that feel alive, responsive, and impossibly fast."
+              </p>
+              <span class="quote-author">— Sakir Ahamad</span>
+            </div>
+          </div>
+
+          <!-- Narrative and Engineering Pillars -->
+          <div class="about-pillars">
+            <div class="about-narrative">
+              <h3 class="narrative-heading">
+                <span class="heading-accent">&gt;</span> ENGINEERING AT THE SPEED OF THOUGHT
+              </h3>
+              <p>
+                Hello, I am <strong>Sakir Ahamad</strong>, a passionate and forward-thinking <strong>Web Developer</strong>. I build state-of-the-art web applications that push the boundaries of performance, design fidelity, and interactive intelligence.
+              </p>
+              <p>
+                With deep expertise spanning modern JavaScript/TypeScript, reactive frontend frameworks, robust server APIs, and AI workflow integration, I engineer solutions that not only look futuristic but solve real-world problems with elegance and rock-solid stability.
+              </p>
+            </div>
+
+            <!-- 4 Pillar Cards -->
+            <div class="pillars-grid">
+              <div class="pillar-card">
+                <div class="pillar-icon text-cyan"><i class="fa-solid fa-bolt-lightning"></i></div>
+                <h4 class="pillar-title">Hyper-Performance</h4>
+                <p class="pillar-desc">Sub-second load times, dynamic caching, micro-bundle optimization, and seamless 60fps renders.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon text-magenta"><i class="fa-solid fa-brain"></i></div>
+                <h4 class="pillar-title">AI &amp; Neural Synergy</h4>
+                <p class="pillar-desc">Seamlessly embedding large language models, streaming inference, and autonomous agent capabilities into intuitive UIs.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon text-green"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h4 class="pillar-title">Sensory Cyber UI</h4>
+                <p class="pillar-desc">Rich visual glassmorphism, responsive tactile micro-interactions, dark cyberpunk palettes, and audio cues.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon text-blue"><i class="fa-solid fa-shield-halved"></i></div>
+                <h4 class="pillar-title">Clean Resilient Code</h4>
+                <p class="pillar-desc">Strict typing, modular component architectures, secure API endpoints, and scalable cloud structures.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX (ARSENAL) -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">// 02. ARSENAL_MATRIX</div>
+          <h2 class="section-title">CAPABILITIES &amp; WEAPONRY</h2>
+          <p class="section-subtitle">Operational mastery across modern web standards, systems design, and next-gen toolsets.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="skills-filter" id="skillsFilter">
+          <button class="filter-chip active" data-filter="all">ALL SUBSYSTEMS</button>
+          <button class="filter-chip" data-filter="frontend">FRONTEND &amp; UI</button>
+          <button class="filter-chip" data-filter="backend">BACKEND &amp; DATA</button>
+          <button class="filter-chip" data-filter="ai">AI &amp; EMERGING</button>
+          <button class="filter-chip" data-filter="tools">DEVOPS &amp; TOOLS</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Skill: React / Next.js -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-head">
+              <div class="skill-icon text-cyan"><i class="fa-brands fa-react"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-name">React / Next.js</h4>
+                <span class="skill-level">MASTERY: 95%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="--level: 95%;"></div>
+            </div>
+            <p class="skill-note">Server Components, SSR/SSG, Hooks, Concurrent rendering, State machines.</p>
+            <div class="skill-tags">
+              <span>App Router</span><span>Hooks</span><span>SSR</span>
+            </div>
+          </div>
+
+          <!-- Skill: TypeScript & JavaScript -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-head">
+              <div class="skill-icon text-amber"><i class="fa-brands fa-js"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-name">JavaScript / TypeScript</h4>
+                <span class="skill-level">MASTERY: 94%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="--level: 94%;"></div>
+            </div>
+            <p class="skill-note">Strict type safety, ESNext syntax, asynchronous streams, functional paradigms.</p>
+            <div class="skill-tags">
+              <span>TS 5.x</span><span>ESNext</span><span>Generics</span>
+            </div>
+          </div>
+
+          <!-- Skill: HTML5 & Modern CSS -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-head">
+              <div class="skill-icon text-magenta"><i class="fa-brands fa-css3-alt"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-name">HTML5 / Vanilla CSS3</h4>
+                <span class="skill-level">MASTERY: 98%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="--level: 98%;"></div>
+            </div>
+            <p class="skill-note">Semantic architecture, Flexbox, Grid, CSS Variables, Glassmorphism, Animations.</p>
+            <div class="skill-tags">
+              <span>CSS Grid</span><span>Animations</span><span>Custom Properties</span>
+            </div>
+          </div>
+
+          <!-- Skill: Node.js & Express -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-head">
+              <div class="skill-icon text-green"><i class="fa-brands fa-node"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Node.js &amp; Express</h4>
+                <span class="skill-level">MASTERY: 90%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="--level: 90%;"></div>
+            </div>
+            <p class="skill-note">REST microservices, middleware chains, authentication, secure file I/O &amp; streaming.</p>
+            <div class="skill-tags">
+              <span>REST</span><span>Middleware</span><span>JWT / Auth</span>
+            </div>
+          </div>
+
+          <!-- Skill: Database Engines -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-head">
+              <div class="skill-icon text-blue"><i class="fa-solid fa-database"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-name">PostgreSQL &amp; MongoDB</h4>
+                <span class="skill-level">MASTERY: 88%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="--level: 88%;"></div>
+            </div>
+            <p class="skill-note">Relational schemas, NoSQL document modeling, indexing, Prisma / Mongoose ORMs.</p>
+            <div class="skill-tags">
+              <span>SQL</span><span>MongoDB</span><span>Prisma</span>
+            </div>
+          </div>
+
+          <!-- Skill: AI & LLM Integration -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-head">
+              <div class="skill-icon text-cyan"><i class="fa-solid fa-brain"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-name">AI / LLM API Engineering</h4>
+                <span class="skill-level">MASTERY: 92%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="--level: 92%;"></div>
+            </div>
+            <p class="skill-note">OpenAI &amp; Gemini APIs, Streaming responses, Prompt Engineering, Agentic Tool use.</p>
+            <div class="skill-tags">
+              <span>OpenAI</span><span>Gemini</span><span>Streaming</span>
+            </div>
+          </div>
+
+          <!-- Skill: Canvas / Three.js / WebGL -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-head">
+              <div class="skill-icon text-magenta"><i class="fa-solid fa-cubes"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-name">WebGL &amp; Interactive Canvas</h4>
+                <span class="skill-level">MASTERY: 84%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="--level: 84%;"></div>
+            </div>
+            <p class="skill-note">Interactive particle systems, 3D transformations, Web Audio API integration.</p>
+            <div class="skill-tags">
+              <span>Canvas 2D</span><span>WebGL</span><span>Web Audio</span>
+            </div>
+          </div>
+
+          <!-- Skill: Git & DevOps -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-head">
+              <div class="skill-icon text-amber"><i class="fa-brands fa-git-alt"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-name">Git &amp; Deployment Workflows</h4>
+                <span class="skill-level">MASTERY: 95%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="--level: 95%;"></div>
+            </div>
+            <p class="skill-note">Version control, CI/CD pipelines, Vercel, Netlify, Docker basics, Cloudflare edge.</p>
+            <div class="skill-tags">
+              <span>GitHub</span><span>CI/CD</span><span>Vercel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS ARCHIVES SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">// 03. SYSTEM_ARCHIVES</div>
+          <h2 class="section-title">DEPLOYED EXPEDITIONS</h2>
+          <p class="section-subtitle">A showcase of mission-critical platforms, AI applications, and immersive web experiments.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="projects-filter" id="projectsFilter">
+          <button class="filter-chip active" data-pfilter="all">ALL PLATFORMS</button>
+          <button class="filter-chip" data-pfilter="ai">AI SYSTEMS</button>
+          <button class="filter-chip" data-pfilter="fullstack">FULL-STACK</button>
+          <button class="filter-chip" data-pfilter="interactive">CREATIVE UI</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: NexusAI -->
+          <article class="project-card" data-category="ai" data-project-id="nexus-ai">
+            <div class="project-preview">
+              <div class="project-glow-layer"></div>
+              <div class="project-cyber-header">
+                <span class="proj-code">SYS-01 // COGNITIVE</span>
+                <span class="proj-badge badge-pulse">LIVE NODE</span>
+              </div>
+              <div class="project-mockup">
+                <div class="mockup-screen">
+                  <div class="mockup-nav">
+                    <span class="m-dot red"></span><span class="m-dot amber"></span><span class="m-dot green"></span>
+                    <span class="m-url">nexusai.network/telemetry</span>
+                  </div>
+                  <div class="mockup-content ai-mock">
+                    <div class="ai-stream-line">&gt; STREAMING NEURAL EMBEDDINGS... [OK]</div>
+                    <div class="ai-prompt-box">
+                      <span class="ai-icon"><i class="fa-solid fa-robot"></i></span>
+                      <span class="ai-text">Synthesizing multi-modal code matrix for next deployment...</span>
+                    </div>
+                    <div class="ai-metric-row">
+                      <span class="badge-mini">TOKENS/SEC: 142</span>
+                      <span class="badge-mini">LATENCY: 18ms</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta-top">
+                <span class="project-category">AI WORKSPACE ENGINE</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">NexusAI — Cognitive Development Workspace</h3>
+              <p class="project-summary">
+                Next-generation developer productivity ecosystem featuring streaming LLM assistance, real-time code execution, contextual memory, and canvas-based node linking.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Next.js</span>
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">OpenAI API</span>
+                <span class="tech-pill">Tailwind</span>
+                <span class="tech-pill">WebSockets</span>
+              </div>
+              <div class="project-actions">
+                <button class="cyber-btn cyber-btn-sm open-modal-btn" data-modal="nexus-ai">
+                  <span class="btn-text"><i class="fa-solid fa-eye"></i> SYSTEM SPECS</span>
+                </button>
+                <a href="#contact" class="cyber-btn cyber-btn-sm cyber-btn-ghost">
+                  <span class="btn-text"><i class="fa-solid fa-arrow-up-right-from-square"></i> DEMO INQUIRY</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: CyberPulse -->
+          <article class="project-card" data-category="fullstack" data-project-id="cyber-pulse">
+            <div class="project-preview">
+              <div class="project-glow-layer cyan-glow"></div>
+              <div class="project-cyber-header">
+                <span class="proj-code">SYS-02 // TELEMETRY</span>
+                <span class="proj-badge">QUANTUM HUD</span>
+              </div>
+              <div class="project-mockup">
+                <div class="mockup-screen">
+                  <div class="mockup-nav">
+                    <span class="m-dot red"></span><span class="m-dot amber"></span><span class="m-dot green"></span>
+                    <span class="m-url">cyberpulse.io/dashboard</span>
+                  </div>
+                  <div class="mockup-content pulse-mock">
+                    <div class="cyber-chart-sim">
+                      <div class="chart-bar h-60"></div>
+                      <div class="chart-bar h-85"></div>
+                      <div class="chart-bar h-40"></div>
+                      <div class="chart-bar h-95"></div>
+                      <div class="chart-bar h-70"></div>
+                      <div class="chart-bar h-100"></div>
+                    </div>
+                    <div class="chart-footer">
+                      <span class="text-cyan">THROUGHPUT: 48.2 GB/s</span>
+                      <span class="text-green">PEER NODES: 1,024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta-top">
+                <span class="project-category">HIGH-THROUGHPUT ANALYTICS</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">CyberPulse — Quantum Cluster Visualizer</h3>
+              <p class="project-summary">
+                Ultra-fast real-time telemetry dashboard for distributed infrastructure, rendering millions of dynamic metrics through WebGL canvas graphs and instant anomaly detection.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">WebGL</span>
+                <span class="tech-pill">WebSockets</span>
+                <span class="tech-pill">Redis</span>
+              </div>
+              <div class="project-actions">
+                <button class="cyber-btn cyber-btn-sm open-modal-btn" data-modal="cyber-pulse">
+                  <span class="btn-text"><i class="fa-solid fa-eye"></i> SYSTEM SPECS</span>
+                </button>
+                <a href="#contact" class="cyber-btn cyber-btn-sm cyber-btn-ghost">
+                  <span class="btn-text"><i class="fa-solid fa-arrow-up-right-from-square"></i> DEMO INQUIRY</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Aetheria -->
+          <article class="project-card" data-category="interactive" data-project-id="aetheria">
+            <div class="project-preview">
+              <div class="project-glow-layer magenta-glow"></div>
+              <div class="project-cyber-header">
+                <span class="proj-code">SYS-03 // SPATIAL</span>
+                <span class="proj-badge">3D WEB</span>
+              </div>
+              <div class="project-mockup">
+                <div class="mockup-screen">
+                  <div class="mockup-nav">
+                    <span class="m-dot red"></span><span class="m-dot amber"></span><span class="m-dot green"></span>
+                    <span class="m-url">aetheria-spatial.store</span>
+                  </div>
+                  <div class="mockup-content spatial-mock">
+                    <div class="wireframe-cube">
+                      <div class="cube-face front"></div>
+                      <div class="cube-face back"></div>
+                    </div>
+                    <div class="spatial-tag">&lt; 3D PRODUCT HOLOGRAM RENDERING &gt;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta-top">
+                <span class="project-category">SPATIAL COMMERCE</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Aetheria — Immersive 3D Spatial Experience</h3>
+              <p class="project-summary">
+                Spatial web shopping portal built with interactive 3D model customizers, real-time lighting shaders, spatial audio feedback, and lightning-speed micro-interactions.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Three.js</span>
+                <span class="tech-pill">Web Audio</span>
+                <span class="tech-pill">CSS Glass</span>
+                <span class="tech-pill">Stripe API</span>
+              </div>
+              <div class="project-actions">
+                <button class="cyber-btn cyber-btn-sm open-modal-btn" data-modal="aetheria">
+                  <span class="btn-text"><i class="fa-solid fa-eye"></i> SYSTEM SPECS</span>
+                </button>
+                <a href="#contact" class="cyber-btn cyber-btn-sm cyber-btn-ghost">
+                  <span class="btn-text"><i class="fa-solid fa-arrow-up-right-from-square"></i> DEMO INQUIRY</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Chronos -->
+          <article class="project-card" data-category="fullstack" data-project-id="chronos">
+            <div class="project-preview">
+              <div class="project-glow-layer green-glow"></div>
+              <div class="project-cyber-header">
+                <span class="proj-code">SYS-04 // AUTOMATION</span>
+                <span class="proj-badge">AGENT ENGINE</span>
+              </div>
+              <div class="project-mockup">
+                <div class="mockup-screen">
+                  <div class="mockup-nav">
+                    <span class="m-dot red"></span><span class="m-dot amber"></span><span class="m-dot green"></span>
+                    <span class="m-url">chronos-flow.internal</span>
+                  </div>
+                  <div class="mockup-content flow-mock">
+                    <div class="flow-step">
+                      <span class="step-num">01</span>
+                      <span class="step-label">WEBHOOK</span>
+                    </div>
+                    <div class="flow-arrow">&rarr;</div>
+                    <div class="flow-step active">
+                      <span class="step-num">02</span>
+                      <span class="step-label">AI_AGENT</span>
+                    </div>
+                    <div class="flow-arrow">&rarr;</div>
+                    <div class="flow-step">
+                      <span class="step-num">03</span>
+                      <span class="step-label">DEPLOY</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta-top">
+                <span class="project-category">AUTOMATION ORCHESTRATOR</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Chronos — Autonomous Agent Pipeline</h3>
+              <p class="project-summary">
+                Node-based visual workflow constructor allowing engineering teams to chain APIs, scheduled cron tasks, and LLM autonomous agents with zero configuration overhead.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">FastAPI</span>
+              </div>
+              <div class="project-actions">
+                <button class="cyber-btn cyber-btn-sm open-modal-btn" data-modal="chronos">
+                  <span class="btn-text"><i class="fa-solid fa-eye"></i> SYSTEM SPECS</span>
+                </button>
+                <a href="#contact" class="cyber-btn cyber-btn-sm cyber-btn-ghost">
+                  <span class="btn-text"><i class="fa-solid fa-arrow-up-right-from-square"></i> DEMO INQUIRY</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE NEURAL TERMINAL (CLI) -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">// 04. NEURAL_CONSOLE</div>
+          <h2 class="section-title">COMMAND LINE INTERFACE</h2>
+          <p class="section-subtitle">Direct root access to Sakir Ahamad's operational memory. Type commands or click the shortcut chips below.</p>
+        </div>
+
+        <!-- Terminal Window Container -->
+        <div class="terminal-window" id="terminalWindow">
+          <!-- Terminal Titlebar -->
+          <div class="terminal-bar">
+            <div class="term-buttons">
+              <span class="term-btn term-close"></span>
+              <span class="term-btn term-min"></span>
+              <span class="term-btn term-max"></span>
+            </div>
+            <div class="term-title">sakir@neural-core: ~ (bash / zsh)</div>
+            <div class="term-status-badge">
+              <span class="pulsing-green-dot"></span> ENCRYPTED_SESSION
+            </div>
+          </div>
+
+          <!-- Terminal Content Output -->
+          <div class="terminal-body" id="terminalBody">
+            <div class="term-line welcome-line">
+              <span class="text-cyan">=============================================================</span><br>
+              <span class="text-white font-bold">&nbsp;⚡ SAKIR AHAMAD // NEURAL OPERATING SYSTEM v4.8.2</span><br>
+              <span class="text-cyan">=============================================================</span><br>
+              <span class="text-muted">Type <span class="term-highlight">help</span> for a list of available commands or click the buttons below.<br>
+              Try typing <span class="term-highlight">skills</span>, <span class="term-highlight">projects</span>, <span class="term-highlight">bio</span>, <span class="term-highlight">contact</span>, or <span class="term-highlight">matrix</span>.</span>
+            </div>
+          </div>
+
+          <!-- Terminal Input Row -->
+          <div class="terminal-input-row">
+            <span class="term-prompt"><span class="text-green">guest@sakir-dev</span>:<span class="text-cyan">~</span>$</span>
+            <input type="text" class="terminal-input" id="terminalInput" autocomplete="off" spellcheck="false" placeholder="Type 'help' and press Enter..." aria-label="Terminal input prompt">
+          </div>
+
+          <!-- Quick Action Command Chips -->
+          <div class="terminal-chips">
+            <span class="chips-label">QUICK COMMANDS:</span>
+            <button class="cmd-chip" data-cmd="help">help</button>
+            <button class="cmd-chip" data-cmd="bio">bio</button>
+            <button class="cmd-chip" data-cmd="skills">skills</button>
+            <button class="cmd-chip" data-cmd="projects">projects</button>
+            <button class="cmd-chip" data-cmd="matrix">matrix</button>
+            <button class="cmd-chip" data-cmd="contact">contact</button>
+            <button class="cmd-chip" data-cmd="clear">clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE & MILESTONES -->
+    <section class="section timeline-section" id="timeline">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">// 05. EVOLUTION_VECTOR</div>
+          <h2 class="section-title">CAREER TRAJECTORY</h2>
+          <p class="section-subtitle">Tracing the progression of engineering milestones and production deployments.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Milestone 1 -->
+          <div class="timeline-node">
+            <div class="node-marker">
+              <div class="marker-glow"></div>
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="node-content">
+              <div class="node-time">2024 — PRESENT</div>
+              <h3 class="node-title">Senior Web Developer &amp; AI Integration Lead</h3>
+              <p class="node-company text-cyan"><i class="fa-solid fa-building-shield"></i> Advanced Web Systems</p>
+              <p class="node-desc">
+                Leading the development of intelligent web platforms, architecting reactive Next.js systems, implementing neural generative UI features, and optimizing sub-second load performances for high-traffic applications.
+              </p>
+              <div class="node-tags">
+                <span>Next.js 14+</span><span>TypeScript</span><span>LLM APIs</span><span>Cloudflare</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="timeline-node">
+            <div class="node-marker">
+              <div class="marker-glow"></div>
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <div class="node-content">
+              <div class="node-time">2022 — 2024</div>
+              <h3 class="node-title">Full Stack Web Developer</h3>
+              <p class="node-company text-magenta"><i class="fa-solid fa-laptop-code"></i> Dynamic Tech Solutions</p>
+              <p class="node-desc">
+                Designed and deployed end-to-end web applications with React, Node.js, and MongoDB. Engineered REST APIs, microservices, secure authentication systems, and client analytics dashboards.
+              </p>
+              <div class="node-tags">
+                <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="timeline-node">
+            <div class="node-marker">
+              <div class="marker-glow"></div>
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <div class="node-content">
+              <div class="node-time">2021 — 2022</div>
+              <h3 class="node-title">Frontend Engineering Specialist</h3>
+              <p class="node-company text-green"><i class="fa-solid fa-compass-drafting"></i> Creative Web Labs</p>
+              <p class="node-desc">
+                Created pixel-perfect interactive web interfaces, developed custom responsive design components, and transitioned legacy web portals into modern, maintainable JavaScript frameworks.
+              </p>
+              <div class="node-tags">
+                <span>Modern JavaScript</span><span>CSS3 / SCSS</span><span>UI/UX</span><span>Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (QUANTUM TRANSMISSION) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">// 06. TRANSMISSION_BEACON</div>
+          <h2 class="section-title">INITIATE TRANSMISSION</h2>
+          <p class="section-subtitle">Have an ambitious project, contract opportunity, or engineering problem? Send a direct data packet.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Transmission Form -->
+          <div class="cyber-card contact-form-card">
+            <div class="card-header-bar">
+              <div class="card-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-amber"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="card-title-text"><i class="fa-solid fa-satellite"></i> QUANTUM_UPLINK // FORM_DISPATCH</span>
+              <span class="card-status-badge text-green">READY</span>
+            </div>
+
+            <form class="transmission-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="senderName" class="field-label">&gt; SENDER_IDENTITY *</label>
+                  <div class="input-wrap">
+                    <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" id="senderName" name="name" required placeholder="e.g. Elena Rostova" class="cyber-input">
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="senderEmail" class="field-label">&gt; RETURN_COMM_FREQUENCY (EMAIL) *</label>
+                  <div class="input-wrap">
+                    <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" id="senderEmail" name="email" required placeholder="e.g. operative@nexus.io" class="cyber-input">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="missionSubject" class="field-label">&gt; MISSION_PROTOCOL / SUBJECT *</label>
+                <div class="input-wrap">
+                  <span class="input-icon"><i class="fa-solid fa-tag"></i></span>
+                  <input type="text" id="missionSubject" name="subject" required placeholder="e.g. Next-Gen Web Application Deployment" class="cyber-input">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="payloadMessage" class="field-label">&gt; TRANSMISSION_PAYLOAD (MESSAGE) *</label>
+                <div class="input-wrap">
+                  <span class="input-icon textarea-icon"><i class="fa-solid fa-comment-dots"></i></span>
+                  <textarea id="payloadMessage" name="message" rows="5" required placeholder="Outline project objectives, timeline parameters, and tech requirements..." class="cyber-input cyber-textarea"></textarea>
+                </div>
+              </div>
+
+              <!-- Submit button with cyber effect -->
+              <button type="submit" class="cyber-btn cyber-btn-primary submit-btn" id="sendTransmissionBtn">
+                <span class="btn-cut"></span>
+                <span class="btn-glow"></span>
+                <span class="btn-text" id="submitBtnText"><i class="fa-solid fa-paper-plane"></i> TRANSMIT DATA PACKET</span>
+              </button>
+
+              <!-- Transmission Progress Simulator -->
+              <div class="transmission-progress" id="transmissionProgress">
+                <div class="progress-label">
+                  <span id="transStatusText">ENCRYPTING TRANSMISSION...</span>
+                  <span id="transPercentText">0%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" id="progressFill"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Direct Channels & Holo-Badge -->
+          <div class="contact-channels">
+            <!-- Channel Card 1: Direct Email -->
+            <div class="channel-card">
+              <div class="channel-icon-box text-cyan">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <div class="channel-info">
+                <h4 class="channel-title">DIRECT INBOX PROTOCOL</h4>
+                <p class="channel-val" id="emailVal">sakir.ahamad.dev@gmail.com</p>
+                <button class="copy-btn" id="copyEmailBtn" data-email="sakir.ahamad.dev@gmail.com" title="Copy Email to Clipboard">
+                  <i class="fa-solid fa-copy"></i> <span>COPY ADDRESS</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Channel Card 2: Status & Timezone -->
+            <div class="channel-card">
+              <div class="channel-icon-box text-green">
+                <i class="fa-solid fa-satellite-dish"></i>
+              </div>
+              <div class="channel-info">
+                <h4 class="channel-title">COMMUNICATION TELEMETRY</h4>
+                <p class="tele-detail"><i class="fa-solid fa-globe"></i> TIMEZONE: IST (UTC +5:30) // GLOBAL REMOTE</p>
+                <p class="tele-detail"><i class="fa-solid fa-stopwatch"></i> LATENCY: RESPONSE &lt; 24 HOURS</p>
+                <p class="tele-detail text-cyan"><i class="fa-solid fa-circle-check"></i> CONTRACT STATUS: READY FOR ENGAGEMENT</p>
+              </div>
+            </div>
+
+            <!-- Channel Card 3: Social Uplinks -->
+            <div class="channel-card social-card">
+              <h4 class="channel-title">EXTERNAL NETWORK NODES</h4>
+              <div class="social-links-grid">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn github" aria-label="Sakir Ahamad GitHub">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GITHUB</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn linkedin" aria-label="Sakir Ahamad LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span>LINKEDIN</span>
+                </a>
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-btn twitter" aria-label="Sakir Ahamad Twitter/X">
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <span>TWITTER / X</span>
+                </a>
+                <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-btn discord" aria-label="Sakir Ahamad Discord">
+                  <i class="fa-brands fa-discord"></i>
+                  <span>DISCORD</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL: PROJECT SYSTEM SPECS -->
+  <div class="cyber-modal-overlay" id="projectModal" aria-hidden="true" role="dialog">
+    <div class="cyber-modal-container">
+      <div class="modal-corner top-left"></div>
+      <div class="modal-corner top-right"></div>
+      <div class="modal-corner bottom-left"></div>
+      <div class="modal-corner bottom-right"></div>
+
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <span class="modal-sub-tag">// ARCHIVE_DETAILS</span>
+          <h3 class="modal-title" id="modalTitle">System Specs</h3>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modalBody">
+        <!-- Content injected dynamically via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="cyber-toast" id="cyberToast">
+    <div class="toast-icon" id="toastIcon"><i class="fa-solid fa-bell"></i></div>
+    <div class="toast-message" id="toastMessage">Transmission Successful</div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="cyber-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="text-cyan">[SA]</span> SAKIR AHAMAD // WEB DEVELOPER
+        </div>
+        <p class="footer-meta">SYSTEM_VERSION 4.8.2 // BUILT WITH MODERN WEB TECH &amp; COGNITIVE LOGIC</p>
+      </div>
+
+      <div class="footer-center">
+        <span class="copyright-text">&copy; <span id="currentYear">2026</span> Sakir Ahamad. All rights reserved.</span>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="warp-top-btn" id="warpTopBtn" aria-label="Back to top">
+          <span>WARP TOP</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
