@@ -273,7 +273,12 @@
               <div class="dossier-row">
                 <span class="field-key">"BASE_COORDINATES"</span>
                 <span class="field-colon">:</span>
-                <span class="field-val string-val">"Remote // Planet Earth"</span>
+                <span class="field-val string-val">"Anuradhapura, North Central, Sri Lanka // Remote"</span>
+              </div>
+              <div class="dossier-row">
+                <span class="field-key">"DIRECT_COMMS"</span>
+                <span class="field-colon">:</span>
+                <span class="field-val string-val">"(+94) 771882159 // 0756542011"</span>
               </div>
               <div class="dossier-row">
                 <span class="field-key">"SPECIALIZATION"</span>
@@ -974,34 +979,79 @@
             <!-- Channel Card 1: Direct Email -->
             <div class="channel-card">
               <div class="channel-icon-box text-cyan">
-                <i class="fa-solid fa-terminal"></i>
+                <i class="fa-solid fa-envelope"></i>
               </div>
               <div class="channel-info">
                 <h4 class="channel-title">DIRECT INBOX PROTOCOL</h4>
-                <p class="channel-val" id="emailVal">sakir.ahamad.dev@gmail.com</p>
-                <button class="copy-btn" id="copyEmailBtn" data-email="sakir.ahamad.dev@gmail.com" title="Copy Email to Clipboard">
-                  <i class="fa-solid fa-copy"></i> <span>COPY ADDRESS</span>
-                </button>
+                <a href="mailto:nshakeerahamad26@gmail.com" class="channel-val channel-link" id="emailVal">nshakeerahamad26@gmail.com</a>
+                <div class="channel-actions-row">
+                  <a href="mailto:nshakeerahamad26@gmail.com" class="copy-btn action-link-btn" title="Open Mail Client">
+                    <i class="fa-solid fa-paper-plane"></i> <span>SEND EMAIL</span>
+                  </a>
+                  <button class="copy-btn" id="copyEmailBtn" data-copy="nshakeerahamad26@gmail.com" title="Copy Email to Clipboard">
+                    <i class="fa-solid fa-copy"></i> <span>COPY ADDRESS</span>
+                  </button>
+                </div>
               </div>
             </div>
 
-            <!-- Channel Card 2: Status & Timezone -->
+            <!-- Channel Card 2: Voice & Mobile Comms -->
             <div class="channel-card">
               <div class="channel-icon-box text-green">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="channel-info">
+                <h4 class="channel-title">DIRECT VOICE &amp; MOBILE UPLINK</h4>
+                <div class="phone-numbers-group">
+                  <div class="phone-line">
+                    <span class="phone-label">PRIMARY:</span>
+                    <a href="tel:+94771882159" class="channel-val phone-link">(+94) 771882159</a>
+                  </div>
+                  <div class="phone-line">
+                    <span class="phone-label">SECONDARY:</span>
+                    <a href="tel:0756542011" class="channel-val phone-link">0756542011</a>
+                  </div>
+                </div>
+                <div class="channel-actions-row">
+                  <a href="tel:+94771882159" class="copy-btn action-link-btn" title="Call Primary Number">
+                    <i class="fa-solid fa-phone"></i> <span>CALL (+94) 771882159</span>
+                  </a>
+                  <a href="https://wa.me/94771882159" target="_blank" rel="noopener noreferrer" class="copy-btn wa-btn" title="Chat on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i> <span>WHATSAPP CHAT</span>
+                  </a>
+                  <a href="tel:0756542011" class="copy-btn action-link-btn" title="Call Secondary Number">
+                    <i class="fa-solid fa-mobile-screen"></i> <span>CALL 0756542011</span>
+                  </a>
+                  <button class="copy-btn" id="copyPhoneBtn" data-copy="(+94) 771882159 / 0756542011" title="Copy Phone Numbers">
+                    <i class="fa-solid fa-copy"></i> <span>COPY NUMBERS</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Channel Card 3: Status & Telemetry -->
+            <div class="channel-card">
+              <div class="channel-icon-box text-magenta">
                 <i class="fa-solid fa-satellite-dish"></i>
               </div>
               <div class="channel-info">
                 <h4 class="channel-title">COMMUNICATION TELEMETRY</h4>
+                <p class="tele-detail location-tele"><i class="fa-solid fa-location-dot"></i> <span>LOCATION:</span> <span class="tele-val-highlight">ANURADHAPURA, NORTH CENTRAL, SRI LANKA</span></p>
                 <p class="tele-detail"><i class="fa-solid fa-globe"></i> TIMEZONE: IST (UTC +5:30) // GLOBAL REMOTE</p>
-                <p class="tele-detail"><i class="fa-solid fa-stopwatch"></i> LATENCY: RESPONSE &lt; 24 HOURS</p>
+                <p class="tele-detail"><i class="fa-solid fa-headset"></i> COMM MODES: PHONE // WHATSAPP // EMAIL</p>
+                <p class="tele-detail"><i class="fa-solid fa-stopwatch"></i> LATENCY: RESPONSE &lt; 24 HOURS (INSTANT ON CALL)</p>
                 <p class="tele-detail text-cyan"><i class="fa-solid fa-circle-check"></i> CONTRACT STATUS: READY FOR ENGAGEMENT</p>
               </div>
             </div>
 
-            <!-- Channel Card 3: Social Uplinks -->
+            <!-- Channel Card 4: Social Uplinks -->
             <div class="channel-card social-card">
               <h4 class="channel-title">EXTERNAL NETWORK NODES</h4>
               <div class="social-links-grid">
+                <a href="https://wa.me/94771882159" target="_blank" rel="noopener noreferrer" class="social-btn whatsapp-social" aria-label="Sakir Ahamad WhatsApp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>WHATSAPP</span>
+                </a>
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn github" aria-label="Sakir Ahamad GitHub">
                   <i class="fa-brands fa-github"></i>
                   <span>GITHUB</span>
@@ -1013,6 +1063,10 @@
                 <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-btn twitter" aria-label="Sakir Ahamad Twitter/X">
                   <i class="fa-brands fa-x-twitter"></i>
                   <span>TWITTER / X</span>
+                </a>
+                <a href="mailto:nshakeerahamad26@gmail.com" class="social-btn mail-social" aria-label="Sakir Ahamad Email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>EMAIL DIRECT</span>
                 </a>
                 <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-btn discord" aria-label="Sakir Ahamad Discord">
                   <i class="fa-brands fa-discord"></i>

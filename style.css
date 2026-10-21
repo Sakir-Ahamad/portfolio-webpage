@@ -2185,12 +2185,61 @@ body.cursor-hover .custom-cursor-ring {
   margin-bottom: 0.4rem;
 }
 
+/* ==========================================================================
+   CONTACT CHANNELS: PHONE, WHATSAPP, EMAIL & LOCATION STYLES
+   ========================================================================== */
+
 .channel-val {
   font-family: var(--font-mono);
   font-size: 0.85rem;
   color: var(--neon-cyan);
   margin-bottom: 0.75rem;
   word-break: break-all;
+  display: inline-block;
+}
+
+.channel-link,
+.phone-link {
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.channel-link:hover,
+.phone-link:hover {
+  color: #fff;
+  text-shadow: 0 0 8px var(--neon-cyan);
+}
+
+.phone-numbers-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.phone-line {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+}
+
+.phone-label {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  min-width: 75px;
+}
+
+.phone-line .channel-val {
+  margin-bottom: 0;
+  color: var(--neon-green);
+}
+
+.channel-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .copy-btn {
@@ -2199,19 +2248,53 @@ body.cursor-hover .custom-cursor-ring {
   color: var(--text-primary);
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  padding: 0.35rem 0.75rem;
+  padding: 0.4rem 0.75rem;
   border-radius: 3px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
+  text-decoration: none;
   transition: all var(--transition-fast);
 }
 
 .copy-btn:hover {
   background: var(--neon-cyan);
   color: var(--bg-void);
-  box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+}
+
+.copy-btn.wa-btn {
+  background: rgba(37, 211, 102, 0.12);
+  border-color: rgba(37, 211, 102, 0.45);
+  color: #25D366;
+}
+
+.copy-btn.wa-btn:hover {
+  background: #25D366;
+  color: #03060c;
+  box-shadow: 0 0 14px rgba(37, 211, 102, 0.55);
+}
+
+.copy-btn.action-link-btn:hover {
+  background: var(--neon-green);
+  border-color: var(--neon-green);
+  color: var(--bg-void);
+  box-shadow: 0 0 12px rgba(0, 255, 157, 0.45);
+}
+
+.whatsapp-social:hover {
+  color: #25D366 !important;
+  border-color: #25D366 !important;
+  background: rgba(37, 211, 102, 0.15) !important;
+  box-shadow: 0 0 10px rgba(37, 211, 102, 0.3) !important;
+}
+
+.mail-social:hover {
+  color: var(--neon-cyan) !important;
+  border-color: var(--neon-cyan) !important;
+  background: rgba(0, 240, 255, 0.15) !important;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.3) !important;
 }
 
 .tele-detail {
@@ -2222,6 +2305,24 @@ body.cursor-hover .custom-cursor-ring {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.tele-detail i {
+  color: var(--neon-cyan);
+  width: 16px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.location-tele i {
+  color: var(--neon-magenta);
+  filter: drop-shadow(0 0 6px var(--neon-magenta));
+}
+
+.tele-val-highlight {
+  color: var(--neon-cyan);
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .social-card {
@@ -2644,5 +2745,10 @@ body.cursor-hover .custom-cursor-ring {
 
   .social-links-grid {
     grid-template-columns: 1fr;
+  }
+
+  .channel-actions-row .copy-btn {
+    flex: 1 1 100%;
+    justify-content: center;
   }
 }
