@@ -497,7 +497,7 @@
   Name: <span class="text-white">Sakir Ahamad</span>
   Profession: <span class="text-green">Web Developer &amp; AI Interface Engineer</span>
   Specialization: High-Speed Web Applications, Reactive Frontends, LLM API Workflows
-  Location: Remote // Earth
+  Location: Anuradhapura, North Central, Sri Lanka // Remote
   Mission: Bridging hyper-creative aesthetics with clean computational architecture.`,
 
       skills: () => `
@@ -518,10 +518,14 @@
 
       contact: () => `
 <span class="text-cyan font-bold">&gt;&gt; COMM PROTOCOLS:</span>
-  Email     : <span class="text-green">sakir.ahamad.dev@gmail.com</span>
-  Status    : READY FOR CONTRACT &amp; FULL-TIME ROLES
-  Latency   : &lt; 24h response standard
-  Encryption: 4096-bit verified`,
+  Primary Email  : <span class="text-green">nshakeerahamad26@gmail.com</span>
+  Direct Line 1  : <span class="text-green">(+94) 771882159</span> (Call / WhatsApp)
+  Direct Line 2  : <span class="text-green">0756542011</span>
+  WhatsApp Uplink: <span class="text-green">wa.me/94771882159</span>
+  Location       : <span class="text-green">Anuradhapura, North Central, Sri Lanka (UTC +5:30)</span>
+  Status         : READY FOR CONTRACT &amp; FULL-TIME ROLES
+  Latency        : &lt; 24h standard // Instant via Phone/WhatsApp
+  Encryption     : 4096-bit verified`,
 
       social: () => `
 <span class="text-cyan font-bold">&gt;&gt; NETWORK NODES:</span>
@@ -839,18 +843,20 @@
       });
     }
 
-    // Copy Email to Clipboard
-    const copyBtn = document.getElementById('copyEmailBtn');
-    if (copyBtn) {
-      copyBtn.addEventListener('click', () => {
-        const email = copyBtn.getAttribute('data-email') || 'sakir.ahamad.dev@gmail.com';
-        navigator.clipboard.writeText(email).then(() => {
-          showToast(`COPIED TO CLIPBOARD: ${email}`);
+    // Copy to Clipboard (Email, Phone, etc.)
+    const copyButtons = document.querySelectorAll('.copy-btn');
+    copyButtons.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        const textToCopy = btn.getAttribute('data-copy') || btn.getAttribute('data-email');
+        if (!textToCopy) return; // If link without data-copy, allow normal click
+        e.preventDefault();
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          showToast(`COPIED TO CLIPBOARD: ${textToCopy}`);
         }).catch(() => {
-          showToast(`COPIED: ${email}`);
+          showToast(`COPIED: ${textToCopy}`);
         });
       });
-    }
+    });
   }
 
   /* ==========================================================================
